@@ -41,8 +41,8 @@ function initCalendarActions() {
             url: '/admin/events/' + $(this).data('id'),
             success: function (response) {
                 console.log(response);
-                history.back();
                 alert('Deleted');
+                history.back();
             },
             error: function (jqXHR, textStatus, errorThrown){
                 console.log(jqXHR, textStatus, errorThrown);
@@ -61,8 +61,8 @@ function initCalendar(calendarEl) {
                 center: 'title',
                 right: 'dayGridMonth,timeGridWeek,listMonth'
             },
-            slotMinTime: '09:00',
-            slotMaxTime: '23:59',
+            // slotMinTime: '12:00',
+            // slotMaxTime: '23:59',
             firstDay: 1,
             titleFormat: { year: 'numeric', month: '2-digit'},
             themeSystem: 'standard',
@@ -110,7 +110,8 @@ function initCalendar(calendarEl) {
                 $('#event-detail').addClass('d-block show in animate__fadeIn').removeClass('animate__fadeOut');
             },
         });
-        calendar.render()
+        calendar.render();
+        calendar.scrollToTime('18:00:00');
         // calendar.setOption('height', '100%');
 
         $('#event-detail .close').on('click', function (e) {
