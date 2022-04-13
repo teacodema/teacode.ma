@@ -69,7 +69,7 @@ class ActionController extends Controller
             if ($data['end_date']) {
                 $data['end_date'] = \Carbon\Carbon::createFromFormat('Y-m-d', $data['end_date']);
             }
-            if ($data['days_of_week']) {
+            if (key_exists('days_of_week', $data) && $data['days_of_week'] != null) {
                 $data['days_of_week'] = array_map(function ($i) {
                     return (int)$i;
                 }, explode(',', $data['days_of_week']));
@@ -94,6 +94,7 @@ class ActionController extends Controller
                     'end_date' => $data['end_date'],
                     'background_color' => $data['background_color'],
                     'text_color' => $data['text_color'],
+                    'days_of_week' => null,
                     'url' => $data['url'],
                     'title' => $data['title'],
                     'is_private' => isset($data['is_private']) ? 1 : 0,
@@ -117,7 +118,7 @@ class ActionController extends Controller
                     $extended_props[$prop[0]] = $x;
                 }
             }
-            if (key_exists('days_of_week', $data)) {
+            if (key_exists('days_of_week', $data) && $data['days_of_week'] != null) {
                 $data['days_of_week'] = array_map(function ($i) {
                     return (int)$i;
                 }, explode(',', $data['days_of_week']));
@@ -142,6 +143,7 @@ class ActionController extends Controller
                     'end_date' => $data['end_date'] ? \Carbon\Carbon::createFromFormat('Y-m-d', $data['end_date']) : $event->end_date,
                     'background_color' => $data['background_color'] == '#000000' ? null : $data['background_color'],
                     'text_color' => $data['text_color'] == '#000000' ? null : $data['text_color'],
+                    'days_of_week' => null,
                     'url' => $data['url'],
                     'title' => $data['title'],
                     'is_private' => isset($data['is_private']) ? true : false,
