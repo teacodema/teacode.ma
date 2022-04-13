@@ -21,6 +21,7 @@ Route::middleware('cache.headers:public;max_age=15811200;etag')->group(function 
 
     Route::group(['prefix' => 'admin'], function () {
 
+        Route::redirect('/', '/calendar');
         Route::get('/login', 'Auth\LoginController@showLoginForm');
         Route::post('/login', 'Auth\LoginController@login')->name('login');
 
