@@ -1,15 +1,15 @@
 [
     {
         "title": "actions",
-        "slug": "_admin/actions"
+        "slug": "admin/actions"
     },
     {
         "title": "events",
-        "slug": "_admin/events"
+        "slug": "admin/events"
     },
     {
         "title": "calendar",
-        "slug": "_admin/calendar"
+        "slug": "admin/calendar"
     },
     {
         "title": "sitemap",

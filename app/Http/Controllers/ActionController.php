@@ -100,7 +100,7 @@ class ActionController extends Controller
                     'extended_props' => isset($extended_props) ? json_decode(json_encode($extended_props)) : null
                 ]);
             }
-            return redirect('/_admin/events/' . $event->id);
+            return redirect('/admin/events/' . $event->id);
         } catch (\Throwable $th) {
             throw $th;
         }

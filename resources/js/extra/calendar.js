@@ -22,7 +22,7 @@ function initCalendarActions() {
         let data = $('.event form').serializeArray();
         $.ajax({
             method: 'PUT',
-            url: '/_admin/events/' + $(this).data('id'),
+            url: '/admin/events/' + $(this).data('id'),
             data: data,
             success: function (response) {
                 console.log(response);
@@ -38,7 +38,7 @@ function initCalendarActions() {
         // e.preventDefault();
         $.ajax({
             method: 'DELETE',
-            url: '/_admin/events/' + $(this).data('id'),
+            url: '/admin/events/' + $(this).data('id'),
             success: function (response) {
                 console.log(response);
                 history.back();
