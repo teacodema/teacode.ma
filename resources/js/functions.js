@@ -57,6 +57,12 @@ function initDarkMode() {
         }, 300);
         toggleDarkMode(_this, _isActive, _body);
     });
+
+    $(document).on('keyup', function (e){
+        if (e.key == '.') {
+            $('.toggle-dark-mode').trigger('click');
+        }
+    });
 }
 
 function initGlobalActions() {
