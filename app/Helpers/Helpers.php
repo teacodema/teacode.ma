@@ -16,7 +16,7 @@ if (!function_exists('getNextEvent')) {
         if ($only_public) {
             $events = $events->where('is_private', 0);
         }
-        $events = $events->select(['id', 'title', 'start_date', 'days_of_week'])->get();
+        $events = $events->select(['id', 'title', 'start_date', 'days_of_week', 'url'])->get();
 
 
         $events = collect($events)->sortBy(function ($e){
