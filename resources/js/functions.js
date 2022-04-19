@@ -73,7 +73,7 @@ function generateCode() {
     editor();
     setTimeout(() => {
         reRun();
-    }, 500);
+    }, 2000);
     initCodeEvent();
 }
 
@@ -105,7 +105,11 @@ function reRun(btn = null){
 
 function editor() {
     let aboutCode = $('.about-code');
-    aboutCode.css('transition', 'all 0.5s ease').removeClass('hidden-small')
+    $('.ide-section').each(function (i, item){
+        setTimeout(() => {
+            $(item).css('transition', 'all 0.5s ease').removeClass('hidden-small');
+        }, i * 250);
+    });
     let editorBody = aboutCode.find('.editor-wrapper .body-container');
     editorBody.empty();
     let colors = ['#48aca2','#BE8A28','#5A395A','#5E5EFB','#78C078'];

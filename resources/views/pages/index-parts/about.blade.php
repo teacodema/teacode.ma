@@ -39,15 +39,15 @@
                 </div>
             </div>
         </div>
-        <div class="section about-code hidden-small">
+        <div class="section about-code">
             <div class="code-wrapper">
                 <div class="ide-wrapper d-flex">
-                    <div class="ide-section editor-wrapper d-flex">
+                    <div class="ide-section editor-wrapper d-flex hidden-small">
                         <div class="header">
                             <div class="txt bold text-capitalize">editor</div>
                             <div class="btn-actions">
                                 <button class="btn-action btn-edit text-capitalize tc-blue-bg">edit</button>
-                                <button class="btn-action btn-run text-capitalize tc-green-bg pushed">run</button>
+                                <button class="btn-action btn-run text-capitalize tc-green-bg">run</button>
                             </div>
                         </div>
                         <div class="body">
@@ -55,7 +55,7 @@
                         </div>
                         <div class="footer"></div>
                     </div>
-                    <div class="ide-section output-wrapper d-flex">
+                    <div class="ide-section output-wrapper d-flex hidden-small">
                         <div class="header"><div class="txt bold text-capitalize">output</div></div>
                         <div class="body">
                             <div class="body-container">
