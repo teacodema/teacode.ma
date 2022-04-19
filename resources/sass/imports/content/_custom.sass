@@ -30,8 +30,11 @@ iframe
 .form-control:focus, .btn:focus
     box-shadow: unset!important
 
-.accordion-button:not(.collapsed)
+.actions .accordion-button
+    background-color: $tc-blue-dark-2
     color: $tc-white
+    &:not(.collapsed)
+        color: $tc-white
 
 .navbar-toggler:focus
     box-shadow: unset
