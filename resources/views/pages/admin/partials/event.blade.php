@@ -12,9 +12,9 @@
         <label for="end_time" class="form-label">End Time</label>
         <input type="time" class="form-control" id="end_time" name="end_time" placeholder="End Time" value="{{ $event->end_time ?? old('end_time') }}" />
         <label for="exampleColorInput" class="form-label">Background Color picker</label>
-        <input type="color" class="form-control" id="background_color" name="background_color" value="{{ $event->background_color ?? old('background_color') }}"/>
+        <input type="color" class="form-control" id="background_color" name="background_color" value="{{ $event->background_color ?? old('background_color') ?? '#ffffff' }}"/>
         <label for="exampleColorInput" class="form-label">Color picker</label>
-        <input type="color" class="form-control" id="text_color" name="text_color" value="{{ $event->text_color ?? old('text_color') }}"/>
+        <input type="color" class="form-control" id="text_color" name="text_color" value="{{ $event->text_color ?? old('text_color') ?? '#ffffff' }}"/>
         <input type="text" class="form-control" id="days_of_week" name="days_of_week" placeholder="Days of week" value="{{ isset($event) && $event->days_of_week ? implode(',', $event->days_of_week) : old('days_of_week') }}" />
         <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" name="is_private" id="is_private" {{ isset($event) && $event->is_private ? 'checked' : '' }}>
