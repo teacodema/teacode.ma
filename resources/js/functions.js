@@ -61,7 +61,7 @@ function initDarkMode() {
 }
 
 function initGlobalActions() {
-    $('.banner-close').on('click', function () {
+    $(document).on('click', '.banner-close', function () {
         $('.banner').remove();
     });
 }
@@ -78,7 +78,7 @@ function generateCode() {
 }
 
 function initCodeEvent(){
-    $('.btn-edit').on('click', function () {
+    $(document).on('click', '.btn-edit', function () {
         let _this = $(this);
         setTimeout(() => {
             _this.attr('disabled', false);
@@ -86,7 +86,7 @@ function initCodeEvent(){
         }, 500);
         _this.attr('disabled', true);
     });
-    $('.btn-run').on('click', function () {
+    $(document).on('click', '.btn-run', function () {
         reRun($(this));
     });
 }
