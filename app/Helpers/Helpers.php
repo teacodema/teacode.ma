@@ -94,6 +94,7 @@ if (!function_exists('getLinks')) {
             'facebook' => 'https://facebook.com/teacode.ma',
             'facebook-page' => 'https://facebook.com/teacode.ma',
             'facebook-group' => 'https://facebook.com/groups/teacode.ma',
+            'youtube' => 'https://youtube.com/channel/UCss61diIS1kW_TRsHMMwtwQ',
             'instagram' => 'https://instagram.com/teacode.ma',
             'twitter' => 'https://twitter.com/teacodema',
             'linkedin' => 'https://www.linkedin.com/company/teacode.ma',
@@ -117,7 +118,6 @@ if (!function_exists('getLinks')) {
             'how-to-help' => 'https://teacodema.notion.site/3-How-To-Help-15909b9d5d7c4b8fa3f18624d9e9ab8d',
             'how-to-ask-for-help' => 'https://teacodema.notion.site/4-How-To-Ask-For-Help-23e05e4888754f2a9cc5d983e4fc8085',
             'how-to-post-code' => 'https://teacodema.notion.site/5-How-To-Post-Code-bb5133912338459bae7e8e443a43a9da',
-            'youtube' => 'https://youtube.com/channel/UCss61diIS1kW_TRsHMMwtwQ',
             'videos' => 'https://youtube.com/channel/UCss61diIS1kW_TRsHMMwtwQ/videos',
             'events' => 'https://facebook.com/teacode.ma/events',
             'roadmaps' => 'https://roadmap.sh'
