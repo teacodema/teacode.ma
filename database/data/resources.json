@@ -111,6 +111,37 @@
                         "href": "https://blog.angular-university.io/"
                     }
                 ]
+            },
+            {
+                "title": "react",
+                "slug": "react",
+                "links": [
+                    {
+                        "title": "react offi tutorials",
+                        "slug": "",
+                        "href": "https://reactjs.org/tutorial/"
+                    },
+                    {
+                        "title": "fireship",
+                        "slug": "",
+                        "href": "https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA"
+                    },
+                    {
+                        "title": "awesome react",
+                        "slug": "",
+                        "href": "https://github.com/enaqx/awesome-react"
+                    },
+                    {
+                        "title": "react-redux",
+                        "slug": "",
+                        "href": "https://react-redux.js.org/introduction/getting-started"
+                    },
+                    {
+                        "title": "react patterns",
+                        "slug": "",
+                        "href": "https://reactpatterns.com/"
+                    }
+                ]
             }
         ]
     },
