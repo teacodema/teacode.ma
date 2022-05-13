@@ -1,7 +1,7 @@
 <div class="message fullscreen d-none">
     <div class="message-bluring fullscreen"></div>
     <div class="message-wrapper animate__animated animate__rollIn">
-        <div class="close"><i class="fas fa-times"></i></div>
+        <div class="close"><i class="fa-solid fa-xmark"></i></div>
         <div class="row" dir="rtl">
             <div class="col-12 p-1">
                 <div class="welcome"><span>مرحبا بيك</span></div>

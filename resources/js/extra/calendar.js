@@ -11,7 +11,7 @@ function initCalendarActions() {
         let dom = `<div class="row extended_props_row">
                         <div class="col-5"><input type="text" class="form-control" name="extended_props[${index}][]" placeholder="Field name"/></div>
                         <div class="col-6"><input type="text" class="form-control" name="extended_props[${index}][]" placeholder="Field value"/></div>
-                        <div class="col-1 remove-extended_props"><i class="fas fa-minus-circle"></i></div>
+                        <div class="col-1 remove-extended_props"><i class="fa-solid fa-minus-circle"></i></div>
                     </div>`;
         $('.extended_props_wrapper').append(dom);
     });
@@ -83,26 +83,26 @@ function initCalendar(calendarEl) {
                 let date = event.start.toLocaleString([], {day: 'numeric', weekday: 'short', year: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'});
                 let url = event.url.length <= 50 ?  event.url : event.url.substring(0, 50) + '...';
                 let dom = `<div class="event-info event-title">
-                                <div class="event-icon"><i class="fas fa-dot-circle"></i></div>
+                                <div class="event-icon"><i class="fa-solid fa-dot-circle"></i></div>
                                 <div class="event-text"><span>${event.title}</span></div>
                             </div>
                             <div class="event-info event-date">
-                                <div class="event-icon"><i class="fas fa-calendar-alt"></i></div>
+                                <div class="event-icon"><i class="fa-solid fa-calendar-day"></i></div>
                                 <div class="event-text"><span>${date}</span></div>
                             </div>
                             <div class="event-info event-url">
-                                <div class="event-icon"><i class="fas fa-link"></i></div>
+                                <div class="event-icon"><i class="fa-solid fa-link"></i></div>
                                 <div class="event-text"><span><a href="${event.url}" target="_blank">${url}</a></span></div>
                             </div>`;
                 if (event.extendedProps.video) {
                     dom += `<div class="event-info event-video">
-                                <div class="event-icon"><i class="fab fa-youtube"></i></div>
+                                <div class="event-icon"><i class="fa-brands fa-youtube"></i></div>
                                 <div class="event-text"><span><a href="${event.extendedProps.video}" target="_blank">Watch the record</a></span></div>
                             </div>`;
                 }
                 if (event.extendedProps?.description) {
                     dom += `<div class="event-info event-description">
-                                <div class="event-icon"><i class="far fa-file-alt"></i></div>
+                                <div class="event-icon"><i class="fa-solid fa-file-lines"></i></div>
                                 <div class="event-text"><span>${event.extendedProps.description.replaceAll('\\n', '<br/>').replaceAll('\n', '<br/>')}</span></div>
                             </div>`;
                 }

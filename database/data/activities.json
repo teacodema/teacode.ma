@@ -1,7 +1,7 @@
 [
     {
         "img": "/assets/img/activities/ws.svg",
-        "icon": "<i class='fas fa-laptop'></i>",
+        "icon": "<i class='fa-solid fa-laptop'></i>",
         "title": "workshops",
         "slug": "workshops",
         "description": {
@@ -16,7 +16,7 @@
     },
     {
         "img": "/assets/img/activities/__various.svg",
-        "icon": "<i class='fas fa-mug-hot'></i>",
+        "icon": "<i class='fa-solid fa-mug-hot'></i>",
         "title": "hangouts",
         "slug": "hangouts",
         "description": {
@@ -34,7 +34,7 @@
     },
     {
         "img": "/assets/img/activities/communication.svg",
-        "icon": "<i class='fas fa-comments'></i>",
+        "icon": "<i class='fa-solid fa-comments'></i>",
         "title": "communication",
         "slug": "communication",
         "description": {
@@ -50,7 +50,7 @@
     },
     {
         "img": "/assets/img/activities/pair-programming.svg",
-        "icon": "<i class='fas fa-code'></i>",
+        "icon": "<i class='fa-solid fa-code'></i>",
         "title": "coding challenges",
         "slug": "coding-challenges",
         "description": {
@@ -68,7 +68,7 @@
     },
     {
         "img": "/assets/img/activities/mock-interview.svg",
-        "icon": "<i class='fas fa-briefcase'></i>",
+        "icon": "<i class='fa-solid fa-briefcase'></i>",
         "title": "mock interview",
         "slug": "mock-interview",
         "description": {

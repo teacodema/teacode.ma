@@ -21,14 +21,14 @@
             <label class="form-check-label" for="is_private">Private</label>
         </div>
         <div class="extended_props_wrapper">
-            <label for="extended_props" class="form-label">Extended Props <button type="button" class="p-0 ms-2 btn btn-default add-extended_props fs-4"><i class="fas fa-plus-circle"></i></button></label>
+            <label for="extended_props" class="form-label">Extended Props <button type="button" class="p-0 ms-2 btn btn-default add-extended_props fs-4"><i class="fa-solid fa-plus-circle"></i></button></label>
             @if(isset($event) && isset($event->extended_props))
                 @php $index = 0 @endphp
                 @foreach ($event->extended_props as $key => $prop)
                     <div class="row extended_props_row">
                         <div class="col-5"><input type="text" class="form-control" name="extended_props[{{ $index }}][]" placeholder="Field name" value="{{ $key }}"/></div>
                         <div class="col-6"><input type="text" class="form-control" name="extended_props[{{ $index++ }}][]" placeholder="Field value" value="{{ $prop }}"/></div>
-                        <div class="col-1 remove-extended_props"><i class="fas fa-minus-circle"></i></div>
+                        <div class="col-1 remove-extended_props"><i class="fa-solid fa-minus-circle"></i></div>
                     </div>
                 @endforeach
             @endif

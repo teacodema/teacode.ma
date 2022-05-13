@@ -16,7 +16,7 @@
                 <a class="menu-item p-2 text-dark text-capitalize" rel="noopener"
                 href="/discord" target="_blank">
                     <span class="me-1">join us</span>
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </a>
             </nav>
         </div>

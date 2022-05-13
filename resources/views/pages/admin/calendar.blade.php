@@ -23,7 +23,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close ms-auto" data-dismiss="modal" aria-label="Close">
-                        <i class="far fa-times-circle"></i>
+                        <i class="fa-solid fa-circle-xmark"></i>
                     </button>
                 </div>
                 <div class="modal-body">

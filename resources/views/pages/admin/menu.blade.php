@@ -13,7 +13,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid justify-content-end">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
@@ -36,7 +36,7 @@
                             <li class="nav-item">
                                 <a class="menu-item p-2 text-capitalize nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
-                                    Logout <i class="fas fa-power-off fs-6"></i>
+                                    Logout <i class="fa-solid fa-power-off fs-6"></i>
                                 </a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf

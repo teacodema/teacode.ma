@@ -13,8 +13,8 @@
                     <li><span class="text-decoration-underline">#Streaming</span> is used for Streaming, Live Coding & Coding Challenges</li>
                     <li><span class="text-decoration-underline">#Stage</span> is used for main Voice Only Events</li>
                 </ul>
-                <p><i class="fas fa-info-circle"></i> Check <strong>#planning</strong> for any events</p>
-                <p><i class="fas fa-exclamation-triangle"></i> Events/Workshops are <strong>recorded</strong> 🔴 and <strong>published</strong> on youtube</p>
+                <p><i class="fa-solid fa-info-circle"></i> Check <strong>#planning</strong> for any events</p>
+                <p><i class="fa-solid fa-exclamation-triangle"></i> Events/Workshops are <strong>recorded</strong> 🔴 and <strong>published</strong> on youtube</p>
             </blockquote>
         </div>
     </div>

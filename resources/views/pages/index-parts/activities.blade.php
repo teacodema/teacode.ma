@@ -23,7 +23,7 @@
                                         <a href='{{ $activity->slug }}' target='_blank'>
                                             <span class='d-inline-block capitalize-first-letter'>
                                                 <span class='me-1'>click to join</span>
-                                                <i class='fas fa-chevron-right'></i>
+                                                <i class='fa-solid fa-chevron-right'></i>
                                             </span>
                                         </a>
                                     </div>
