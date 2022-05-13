@@ -210,6 +210,21 @@
                         "title": "Very Academy",
                         "slug": "",
                         "href": "https://www.youtube.com/c/veryacademy"
+                    },
+                    {
+                        "title": "Django docs",
+                        "slug": "",
+                        "href": "https://www.djangoproject.com/start/"
+                    },
+                    {
+                        "title": "Django REST framework",
+                        "slug": "",
+                        "href": "https://www.django-rest-framework.org/tutorial/quickstart/"
+                    },
+                    {
+                        "title": "Just Django",
+                        "slug": "",
+                        "href": "https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw"
                     }
                 ]
             },
