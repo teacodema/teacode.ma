@@ -21,7 +21,7 @@ class SitemapController extends Controller
 
     public function generateSitemap(Request $request)
     {
-        $path = \Storage::disk('public')->path('.') . '/sitemap.xml';
+        $path = \Storage::disk('public')->path('') . 'sitemap.xml';
         \Spatie\Sitemap\SitemapGenerator::create('https://teacode.ma')->getSitemap()->writeToFile($path);
         return redirect('/sitemap');
     }
