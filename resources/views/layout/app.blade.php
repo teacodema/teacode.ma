@@ -21,7 +21,6 @@
                 @endif
                 @yield('content')
         </div>
-        {{-- @include('addons.loader') --}}
         {{-- @include('addons.fb-btn') --}}
         @include('addons.toggle-darkmode')
     </body>

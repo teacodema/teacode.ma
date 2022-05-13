@@ -1,4 +1,3 @@
-import { initActions } from "./events";
 import { initCalendarActions, initCalendar } from "./calendar";
 window.$ = require('jquery');
 
@@ -9,7 +8,6 @@ $(function () {
         });
         var calendarEl = document.getElementById('calendar-wrapper');
         initCalendar(calendarEl);
-        initActions();
         initCalendarActions();
     } catch (error) {
         console.log(error);

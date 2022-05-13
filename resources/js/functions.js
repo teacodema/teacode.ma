@@ -17,9 +17,6 @@ function drawBrandText() {
 
 function initParticlesJS() {
     if ($('#particles-js').length) {
-        // setTimeout(() => {
-        //     $('.loader-wrapper').addClass('disappear');
-        // }, 500);
         particlesJS.load('particles-js', '/plugins/particles/particles.min.json');
     }
 }
