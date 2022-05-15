@@ -28,16 +28,12 @@ function setCookie(name, value) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
-function toggleDarkMode(button, isActive, _body) {
+function toggleDarkMode(_body, isActive) {
     if (isActive) {
         _body.addClass('dark-mode').removeClass('light-mode');
-        button.addClass('dark-mode').removeClass('light-mode');
-        $('.icon-mode').addClass('dark-mode').removeClass('light-mode');
         setCookie('mode', 'dark');
     } else {
         _body.removeClass('dark-mode').addClass('light-mode');
-        button.removeClass('dark-mode').addClass('light-mode');
-        $('.icon-mode').removeClass('dark-mode').addClass('light-mode');
         setCookie('mode', 'light');
     }
 }
@@ -52,13 +48,7 @@ function initDarkMode() {
         setTimeout(() => {
             _this.removeClass('pushed');
         }, 300);
-        toggleDarkMode(_this, _isActive, _body);
-    });
-
-    $(document).on('keyup', function (e){
-        if (e.key == '.') {
-            $('.toggle-dark-mode').trigger('click');
-        }
+        toggleDarkMode(_body, _isActive);
     });
 }
 

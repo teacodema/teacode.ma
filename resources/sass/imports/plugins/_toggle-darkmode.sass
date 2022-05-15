@@ -31,18 +31,19 @@
     &:before
         content: '\f0eb'
 
-
-.wrapper-dark-mode .toggle-dark-mode.dark-mode
-    background-color: $tc-white
-    border: 1px solid $tc-white
-
-
-.wrapper-dark-mode .toggle-dark-mode.dark-mode i.icon-mode
-    color: $tc-blue-dark-3
-    font-size: 1.7rem
-    // font-weight: 400
-    // &:before
-    //     content: '\f0eb'
-
 .toggle-dark-mode.pushed
     animation: pushed .3s linear
+
+body.dark-mode
+    .wrapper-dark-mode .toggle-dark-mode
+        background-color: $tc-white
+        border: 1px solid $tc-white
+
+
+    .wrapper-dark-mode .toggle-dark-mode i.icon-mode
+        color: $tc-blue-dark-3
+        font-size: 1.7rem
+        // font-weight: 400
+        // &:before
+        //     content: '\f0eb'
+
