@@ -39,7 +39,7 @@ class AppServiceProvider extends ServiceProvider
 
             $view->data->banner = getNextEvent(true);
             if ($view->data->banner) {
-                $view->data->banner->title = strlen($view->data->banner->title) > 40 ? \Str::substr($view->data->banner->title, 0, 40).'...' : $view->data->banner->title;
+                $view->data->banner->_title = strlen($view->data->banner->title) > 40 ? \Str::substr($view->data->banner->title, 0, 40).'...' : $view->data->banner->title;
             }
 
             $view->data->socialLinks = getSocialLinks(true);

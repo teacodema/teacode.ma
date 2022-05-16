@@ -1,5 +1,5 @@
 require('particles.js');
-import 'bootstrap';
+import * as bs from 'bootstrap';
 
 function drawBrandText() {
     let text = `
@@ -56,6 +56,7 @@ function initGlobalActions() {
     $('.banner-close').on('click', function () {
         $('.banner').remove();
     });
+    new bs.Tooltip('[data-bs-toggle="tooltip"]');
 }
 
 export { drawBrandText, initParticlesJS, initDarkMode, initGlobalActions }

@@ -25,6 +25,8 @@ class Event extends Model
     ];
 
     protected $casts = [
+        'start_date' => 'date',
+        'end_date' => 'date',
         'days_of_week' => 'array',
         'extended_props' => 'array',
     ];
