@@ -52,7 +52,8 @@
             "icon": "<i class='fa-brands fa-patreon'></i>",
             "link": "patreon",
             "title": "patreon",
-            "color": "#EE6551"
+            "color": "#EE6551",
+            "hidden": true
         }
     ],
     "mine": [
