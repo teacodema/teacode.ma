@@ -1,73 +1,57 @@
-{
-    "teacode": [
-        {
-            "icon": "<i class='fa-brands fa-facebook-f'></i>",
-            "link": "facebook",
-            "title": "facebook",
-            "color": "#D32322"
-        },
-        {
-            "icon": "<i class='fa-brands fa-youtube'></i>",
-            "link": "youtube",
-            "title": "youtube",
-            "color": "#4867AA"
-        },
-        {
-            "icon": "<i class='fa-brands fa-instagram'></i>",
-            "link": "instagram",
-            "title": "instagram",
-            "color": "#B03699"
-        },
-        {
-            "icon": "<i class='fa-brands fa-twitter'></i>",
-            "link": "twitter",
-            "title": "twitter",
-            "color": "#50ABF1"
-        },
-        {
-            "icon": "<i class='fa-brands fa-linkedin'></i>",
-            "link": "linkedin",
-            "title": "linkedin",
-            "color": "#6E85D3"
-        },
-        {
-            "icon": "<i class='fa-brands fa-github'></i>",
-            "link": "github",
-            "title": "github",
-            "color": "#6E85D3"
-        },
-        {
-            "icon": "<i class='fa-solid fa-at'></i>",
-            "link": "email",
-            "title": "email",
-            "color": "#EE6551"
-        },
-        {
-            "icon": "<i class='fa-brands fa-paypal'></i>",
-            "link": "paypal",
-            "title": "paypal",
-            "color": "#EE6551"
-        },
-        {
-            "icon": "<i class='fa-brands fa-patreon'></i>",
-            "link": "patreon",
-            "title": "patreon",
-            "color": "#EE6551",
-            "hidden": true
-        }
-    ],
-    "mine": [
-        {
-            "icon": "<i class='fa-brands fa-github'></i>",
-            "link": "https://github.com/drissboumlik",
-            "title": "github",
-            "color": "#D32322"
-        },
-        {
-            "icon": "<i class='fa-brands fa-twitter'></i>",
-            "link": "https://twitter.com/drissboumlik",
-            "title": "twitter",
-            "color": "#50ABF1"
-        }
-    ]
-}
+[
+    {
+        "icon": "<i class='fa-brands fa-facebook-f'></i>",
+        "link": "facebook",
+        "title": "facebook",
+        "color": "#D32322"
+    },
+    {
+        "icon": "<i class='fa-brands fa-youtube'></i>",
+        "link": "youtube",
+        "title": "youtube",
+        "color": "#4867AA"
+    },
+    {
+        "icon": "<i class='fa-brands fa-instagram'></i>",
+        "link": "instagram",
+        "title": "instagram",
+        "color": "#B03699"
+    },
+    {
+        "icon": "<i class='fa-brands fa-twitter'></i>",
+        "link": "twitter",
+        "title": "twitter",
+        "color": "#50ABF1"
+    },
+    {
+        "icon": "<i class='fa-brands fa-linkedin'></i>",
+        "link": "linkedin",
+        "title": "linkedin",
+        "color": "#6E85D3"
+    },
+    {
+        "icon": "<i class='fa-brands fa-github'></i>",
+        "link": "github",
+        "title": "github",
+        "color": "#6E85D3"
+    },
+    {
+        "icon": "<i class='fa-solid fa-at'></i>",
+        "link": "email",
+        "title": "email",
+        "color": "#EE6551"
+    },
+    {
+        "icon": "<i class='fa-brands fa-paypal'></i>",
+        "link": "paypal",
+        "title": "paypal",
+        "color": "#EE6551"
+    },
+    {
+        "icon": "<i class='fa-brands fa-patreon'></i>",
+        "link": "patreon",
+        "title": "patreon",
+        "color": "#EE6551",
+        "hidden": true
+    }
+]

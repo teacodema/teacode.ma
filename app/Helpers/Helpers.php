@@ -27,7 +27,7 @@ if (!function_exists('getNextEvent')) {
                 } else {
                     $diff = abs($diff);
                     $days = $diff % 7 == 0 ? 0 : 7 - $diff % 7;
-                    $e->_start_date = now()->addDays($days)->toDateString();
+                    $e->_start_date = now()->addDays($days);
                 }
             } else {
                 $e->_start_date = $e->start_date;
@@ -127,16 +127,28 @@ if (!function_exists('getLinks')) {
 }
 
 if (!function_exists('getSocialLinks')) {
-    function getSocialLinks()
+    function getSocialLinks($filtered = false)
     {
-        return json_decode(\File::get(base_path() . '/database/data/social-links.json'));
+        $data = collect(json_decode(\File::get(base_path() . '/database/data/social-links.json')));
+        if ($filtered) {
+            $data = $data->filter(function ($item) {
+                return !isset($item->hidden) || !$item->hidden;
+            });
+        }
+        return $data;
     }
 }
 
 if (!function_exists('getFooterMenu')) {
-    function getFooterMenu()
+    function getFooterMenu($filtered = false)
     {
-        return json_decode(\File::get(base_path() . '/database/data/footer-menu.json'));
+        $data = collect(json_decode(\File::get(base_path() . '/database/data/footer-menu.json')));
+        if ($filtered) {
+            $data = $data->filter(function ($item) {
+                return !isset($item->hidden) || !$item->hidden;
+            });
+        }
+        return $data;
     }
 }
 

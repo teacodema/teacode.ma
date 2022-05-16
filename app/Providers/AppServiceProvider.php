@@ -42,8 +42,8 @@ class AppServiceProvider extends ServiceProvider
                 $view->data->banner->title = strlen($view->data->banner->title) > 40 ? \Str::substr($view->data->banner->title, 0, 40).'...' : $view->data->banner->title;
             }
 
-            $view->data->socialLinks = getSocialLinks();
-            $view->data->footerMenu = getFooterMenu();
+            $view->data->socialLinks = getSocialLinks(true);
+            $view->data->footerMenu = getFooterMenu(true);
             $view->with(['mode' => $mode]);
         });
 
