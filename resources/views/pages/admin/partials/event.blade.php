@@ -4,9 +4,9 @@
         <input type="text" class="form-control" id="title" name="title" placeholder="Titre" required value="{{ $event->title ?? old('title') }}"/>
         <input type="text" class="form-control" id="url" name="url" placeholder="Url" required value="{{ $event->url ?? old('url') }}"/>
         <label for="start_date" class="form-label">Start Date</label>
-        <input type="date" class="form-control" id="start_date" name="start_date" placeholder="Start Date" required value="{{ $event->start_date->toDateString() ?? old('start_date') }}"/>
+        <input type="date" class="form-control" id="start_date" name="start_date" placeholder="Start Date" required value="{{ isset($event) ? $event->start_date->toDateString() : old('start_date') }}"/>
         <label for="end_date" class="form-label">End Date</label>
-        <input type="date" class="form-control" id="end_date" name="end_date" placeholder="End Date" value="{{ $event->end_date->toDateString() ?? old('end_date') }}">
+        <input type="date" class="form-control" id="end_date" name="end_date" placeholder="End Date" value="{{ isset($event) ? $event->end_date->toDateString() : old('end_date') }}">
         <label for="start_time" class="form-label">Start Time</label>
         <input type="time" class="form-control" id="start_time" name="start_time" placeholder="Start Time" required value="{{ $event->start_time ?? old('start_time') }}"/>
         <label for="end_time" class="form-label">End Time</label>
