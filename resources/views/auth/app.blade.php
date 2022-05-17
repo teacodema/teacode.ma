@@ -3,6 +3,7 @@
     <head>
         <!-- External Addons-->
         @include('addons.google-analytics')
+        @include('addons.google-optimize')
 
         <!-- Addons-->
         @include('addons.brand-text')
