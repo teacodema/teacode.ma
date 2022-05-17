@@ -56,7 +56,12 @@ function initGlobalActions() {
     $('.banner-close').on('click', function () {
         $('.banner').remove();
     });
-    new bs.Tooltip('[data-bs-toggle="tooltip"]');
+    $('.banner-text').on('mouseover', function () {
+        $('.banner-tooltip').addClass('show')
+    })
+    $('.banner-text').on('mouseleave', function () {
+        $('.banner-tooltip').removeClass('show')
+    })
 }
 
 export { drawBrandText, initParticlesJS, initDarkMode, initGlobalActions }

@@ -9,6 +9,11 @@
                             Next: {{ $data->banner->_title }}
                     </a>
                 </span>
+                <div class="banner-tooltip tooltip fade bs-tooltip-bottom"
+                    role="tooltip" data-popper-placement="bottom">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">مرحبا بيك الى عندك مشاكل فأساسيات البرمجة</div>
+                </div>
             </div>
         </div>
         <div class="banner-close">

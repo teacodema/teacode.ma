@@ -11,6 +11,7 @@
     .banner-wrapper
         padding: 15px 10px 15px 5px
     .banner-text
+        position: relative
         display: flex
         column-gap: 5px
         *
@@ -37,3 +38,18 @@
         *
             color: white
 
+    .tooltip
+        position: absolute
+        transform-origin: top center
+        transform: translate(-50%, 30%) scale(0.2)
+        left: 50%
+        z-index: -1
+        transition: transform .2s linear
+        width: 100%
+        &.show
+            z-index: 1080
+            transform: translate(-50%, 30%) scale(1)
+        .tooltip-arrow
+            left: calc(50% - 0.4rem)
+        .tooltip-inner
+            max-width: unset
