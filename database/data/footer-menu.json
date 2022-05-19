@@ -5,39 +5,13 @@
         "target": "_blank"
     },
     {
-        "title": "podcast",
-        "slug": "p/coming-soon",
-        "hidden": true
-    },
-    {
         "title": "events",
         "slug": "events",
         "target": "_blank"
     },
     {
-        "title": "patreon",
-        "slug": "patreon",
-        "target": "_blank",
-        "hidden": true
-    },
-    {
-        "title": "blog",
-        "slug": "p/blog",
-        "hidden": true
-    },
-    {
-        "title": "book interview",
-        "slug": "p/interview",
-        "hidden": true
-    },
-    {
         "title": "contributors",
         "slug": "p/contributors"
-    },
-    {
-        "title": "calendar",
-        "slug": "p/calendar",
-        "hidden": true
     },
     {
         "title": "resources",
@@ -61,11 +35,6 @@
     {
         "title": "privacy",
         "slug": "p/privacy",
-        "hidden": true
-    },
-    {
-        "title": "feedback",
-        "slug": "p/feedback",
         "hidden": true
     }
 ]
