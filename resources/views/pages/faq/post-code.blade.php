@@ -11,7 +11,7 @@
                     <p class="mb-2">You can find more informations on message formatting
                         <a href="https://support.discord.com/hc/en-us/articles/210298617-Bases-de-la-mise-en-forme-de-texte-Markdown-mise-en-forme-du-chat-gras-italique-soulign%C3%A9-"
                             target="_blank">here</a></p>
-                    <img src="{{ asset('assets/attachments/markdown_code.gif') }}" class="w-100" alt="">
+                    <img src="{{ asset('assets/attachments/markdown_code.gif') }}" class="w-100" alt="" loading="lazy">
             </blockquote>
         </div>
     </div>

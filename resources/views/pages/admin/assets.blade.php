@@ -13,7 +13,7 @@
                     <div class="row">
                         @foreach ($files as $file)
                             <div class="col-lg-4 col-md-6 col-12 mb-4">
-                                <img src="{{ asset($file->webPath) }}" class="img-thumbnail rounded" alt="">
+                                <img src="{{ asset($file->webPath) }}" class="img-thumbnail rounded" alt="" loading="lazy">
                             </div>
                         @endforeach
                     </div>

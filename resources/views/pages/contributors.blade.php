@@ -16,7 +16,6 @@
                                 <img class="w-100 m-auto d-block"
                                 src="{{ $contributor->image }}" alt="" title={{  $contributor->role }} loading="lazy">
                             </div>
-                            {{-- <div class="contributor-badge">{{ $contributor->badge }}</div> --}}
                         </div>
                         <div class="text-data text-center">
                             <div class="fullname text-capitalize white-space-nowrap">{{ $contributor->badge }} {{ $contributor->fullname }}</div>

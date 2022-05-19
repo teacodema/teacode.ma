@@ -33,7 +33,7 @@
                                 <div class="img-wrapper">
                                     {{-- @include('pages.index-parts.svg-includes.' . $activity->slug) --}}
                                     <img class="img-fluid w-md-75 m-auto d-block" src="{{ asset('/assets/img/activities/' . $activity->slug . '.svg') }}"
-                                        alt="{{ $activity->title }}" height="210" width="210">
+                                        alt="{{ $activity->title }}" height="210" width="210" loading="lazy">
                                 </div>
                             </div>
                         </div>
