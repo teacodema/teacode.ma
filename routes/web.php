@@ -19,7 +19,7 @@ Route::middleware('cache.headers:public;max_age=15811200;etag')->group(function 
     // \Auth::routes();
 
 
-    Route::group(['prefix' => '_admin'], function () {
+    Route::group(['prefix' => 'admin'], function () {
 
         Route::get('/login', 'Auth\LoginController@showLoginForm');
         Route::post('/login', 'Auth\LoginController@login')->name('login');
@@ -37,21 +37,10 @@ Route::middleware('cache.headers:public;max_age=15811200;etag')->group(function 
         });
     });
 
-
-    Route::group(['prefix' => 'admin'], function () {
-        Voyager::routes();
-    });
-
     Route::get('/', 'HomeController@home');
 
     // Pages
     Route::get('/p/{page}', 'PageController@getPage');
-
-    // Blog
-    Route::get('/category/{category}', 'PostController@getPostsByCategory');
-    Route::get('/tags/{tag}', 'PostController@getPostsByTag');
-    Route::get('blog', 'PostController@index');
-    Route::get('blog/{slug}', 'PostController@show');
 
     // SiteMap
     Route::get('/sitemap', 'SitemapController@sitemap');
