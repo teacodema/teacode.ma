@@ -7,7 +7,7 @@
                 <div class="row d-flex justify-content-center align-items-center w-100">
                     <div class="col-md-6 login-block">
                         @if (session('status'))
-                            <div class="alert alert-success" role="alert">
+                            <div class="alert tc-blue-dark-1-bg" role="alert">
                                 {{ session('status') }}
                             </div>
                         @endif
