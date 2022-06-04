@@ -1,6 +1,8 @@
 <div id="about" class="about section-wrapper">
     <div class="section about-header">
-        <div id="particles-js" class="particles-js"></div>
+        <div id="particles-js" class="particles-js">
+            <div class="crescent-moon"></div>
+        </div>
         <div class="container">
             <div class="row justify-content-center align-items-center mb-3">
                 <div class="col-12">
@@ -57,10 +59,5 @@
             </div>
         </div>
     </div>
-    {{-- <div class="mouse-icon-wrapper">
-        <div class="mouse-icon">
-            <img src="{{ asset('/assets/img/index/mouse1.png') }}" alt="">
-        </div>
-    </div> --}}
 </div>
 
