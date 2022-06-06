@@ -103,5 +103,15 @@
         "fullname": "souphiane",
         "role": "helper",
         "slug": "souphiane"
+    },
+    {
+        "fullname": "Imane",
+        "role": "host",
+        "slug": "pie"
+    },
+    {
+        "fullname": "Abderrahman",
+        "role": "helper",
+        "slug": "black-purple"
     }
 ]
