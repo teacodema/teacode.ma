@@ -32,7 +32,7 @@
                                 <!-- Checkbox -->
                                 <div class="form-check">
                                     <input class="form-check-input me-2" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} />
-                                    <label class="form-check-label" for="form2Example3">Remember me</label>
+                                    <label class="form-check-label" for="remember">Remember me</label>
                                 </div>
                                 <div class="password-request">
                                     <a href="{{ route('password.request') }}" class="">Forgot password?</a>
