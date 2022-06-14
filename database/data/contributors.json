@@ -1,11 +1,11 @@
 [
     {
-        "fullname": "driss boumlik",
+        "fullname": "driss",
         "role": "staff",
         "slug": "drissboumlik"
     },
     {
-        "fullname": "Maryam",
+        "fullname": "maryam",
         "role": "staff",
         "slug": "maryam"
     },
@@ -20,27 +20,27 @@
         "slug": "odachi"
     },
     {
-        "fullname": "taha omar",
+        "fullname": "taha",
         "role": "staff",
         "slug": "satisfy"
     },
     {
-        "fullname": "Hafsa",
+        "fullname": "hafsa",
         "role": "staff",
         "slug": "hafsacactus"
     },
     {
-        "fullname": "abdelhalim lakfifi",
+        "fullname": "abdelhalim",
         "role": "staff",
         "slug": "461dou"
     },
     {
-        "fullname": "Omar",
+        "fullname": "omar",
         "role": "host",
         "slug": "omarbelkady"
     },
     {
-        "fullname": "Fatima Zahra",
+        "fullname": "fatima zahra",
         "role": "host",
         "slug": "fatimazahra"
     },
@@ -70,7 +70,7 @@
         "slug": "escaper01"
     },
     {
-        "fullname": "ahmed mechrir",
+        "fullname": "ahmed",
         "role": "helper",
         "slug": "ahmedmechrir"
     },
@@ -85,7 +85,7 @@
         "slug": "ali"
     },
     {
-        "fullname": "Amine",
+        "fullname": "amine",
         "role": "helper",
         "slug": "amine"
     },
@@ -105,12 +105,12 @@
         "slug": "souphiane"
     },
     {
-        "fullname": "Imane",
+        "fullname": "pie",
         "role": "host",
         "slug": "pie"
     },
     {
-        "fullname": "Abderrahman",
+        "fullname": "abderrahman",
         "role": "helper",
         "slug": "black-purple"
     }
