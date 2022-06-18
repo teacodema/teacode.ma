@@ -37,18 +37,18 @@ class ApiController extends Controller
                     'url' => $_e->url,
                     'title' => $_e->title,
                     'classNames' => 'cursor-pointer',
-                    'extendedProps' => json_decode(json_encode($_e->extended_props))
+                    'extendedProps' => $_e->extended_props
                 ];
             } else {
                 $e = (object) [
-                    'start' => $_e->start_date . ' ' . $_e->start_time,
-                    'end' => $_e->end_date . ' ' . $_e->end_time,
+                    'start' => $_e->start_date->toDateString() . ' ' . $_e->start_time,
+                    'end' => $_e->end_date->toDateString() . ' ' . $_e->end_time,
                     'backgroundColor' => $_e->background_color,
                     'textColor' => $_e->text_color,
                     'url' => $_e->url,
                     'title' => $_e->title,
                     'classNames' => 'cursor-pointer',
-                    'extendedProps' => json_decode(json_encode($_e->extended_props))
+                    'extendedProps' => $_e->extended_props
                 ];
             }
             return $e;
