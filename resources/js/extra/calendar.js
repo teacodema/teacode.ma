@@ -94,18 +94,6 @@ function initCalendar(calendarEl) {
                                 <div class="event-icon"><i class="fa-solid fa-link"></i></div>
                                 <div class="event-text"><span><a href="${event.url}" target="_blank">${url}</a></span></div>
                             </div>`;
-                if (event.extendedProps.video) {
-                    dom += `<div class="event-info event-video">
-                                <div class="event-icon"><i class="fa-brands fa-youtube"></i></div>
-                                <div class="event-text"><span><a href="${event.extendedProps.video}" target="_blank">Watch the record</a></span></div>
-                            </div>`;
-                }
-                if (event.extendedProps?.description) {
-                    dom += `<div class="event-info event-description">
-                                <div class="event-icon"><i class="fa-solid fa-file-lines"></i></div>
-                                <div class="event-text"><span>${event.extendedProps.description.replaceAll('\\n', '<br/>').replaceAll('\n', '<br/>')}</span></div>
-                            </div>`;
-                }
                 $('#event-detail .modal-body').append(dom);
                 $('#event-detail').addClass('d-block show in animate__fadeIn').removeClass('animate__fadeOut');
             },
