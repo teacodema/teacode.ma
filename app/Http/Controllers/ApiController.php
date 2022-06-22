@@ -24,32 +24,28 @@ class ApiController extends Controller
         ->get();
 
 
-        $events = $_events->map(function ($_e){
+        $events = $_events->map(function ($_e) {
+            $eventProps = [
+                'backgroundColor' => $_e->background_color,
+                'textColor' => $_e->text_color,
+                'url' => $_e->url,
+                'title' => $_e->title,
+                'classNames' => 'cursor-pointer',
+                'extendedProps' => (array)$_e->extended_props
+            ];
             if ($_e->days_of_week) {
-                $e = (object) [
+                $e = (object) array_merge($eventProps, [
                     'startTime' => $_e->start_time,
                     'endTime' => $_e->end_time,
                     'startRecur' => $_e->start_date,
                     'endRecur' => $_e->end_date,
-                    'backgroundColor' => $_e->background_color,
-                    'textColor' => $_e->text_color,
                     'daysOfWeek' => $_e->days_of_week,
-                    'url' => $_e->url,
-                    'title' => $_e->title,
-                    'classNames' => 'cursor-pointer',
-                    'extendedProps' => $_e->extended_props
-                ];
+                ]);
             } else {
-                $e = (object) [
+                $e = (object) array_merge($eventProps, [
                     'start' => $_e->start_date->toDateString() . ' ' . $_e->start_time,
                     'end' => $_e->end_date->toDateString() . ' ' . $_e->end_time,
-                    'backgroundColor' => $_e->background_color,
-                    'textColor' => $_e->text_color,
-                    'url' => $_e->url,
-                    'title' => $_e->title,
-                    'classNames' => 'cursor-pointer',
-                    'extendedProps' => $_e->extended_props
-                ];
+                ]);
             }
             return $e;
         });
