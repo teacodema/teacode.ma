@@ -2,6 +2,20 @@
 
 use App\Models\Event;
 
+if (!function_exists('extractExtendedProps')) {
+    function extractExtendedProps($extended_props_raw)
+    {
+        if (!$extended_props_raw) {
+            return null;
+        }
+        $extended_props = [];
+        foreach ($extended_props_raw as $prop) {
+            $x = str_replace('\n', '\\n', $prop[1]);
+            $extended_props[$prop[0]] = $x;
+        }
+        return $extended_props;
+    }
+}
 if (!function_exists('getNextEvent')) {
     function getNextEvent($only_public = false)
     {
@@ -16,21 +30,21 @@ if (!function_exists('getNextEvent')) {
         if ($only_public) {
             $events = $events->where('is_private', 0);
         }
-        $events = $events->select(['id', 'title', 'start_date', 'days_of_week', 'url'])->get();
+        $events = $events->select(['id', 'title', 'start_date', 'start_time', 'days_of_week', 'url'])->get();
 
 
         $events = collect($events)->sortBy(function ($e){
             if ($e->days_of_week) {
                 $diff = now()->diffInDays($e->start_date, false);
                 if ($diff > 0) {
-                    $e->_start_date = $e->start_date;
+                    $e->_start_date = $e->start_date->toDateString() . ' ' . $e->start_time;
                 } else {
                     $diff = abs($diff);
                     $days = $diff % 7 == 0 ? 0 : 7 - $diff % 7;
-                    $e->_start_date = now()->addDays($days);
+                    $e->_start_date = now()->addDays($days)->toDateString() . ' ' . $e->start_time;
                 }
             } else {
-                $e->_start_date = $e->start_date;
+                $e->_start_date = $e->start_date->toDateString() . ' ' . $e->start_time;
             }
             unset($e->days_of_week);
             return $e->_start_date;
