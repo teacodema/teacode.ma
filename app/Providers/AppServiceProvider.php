@@ -36,17 +36,15 @@ class AppServiceProvider extends ServiceProvider
             if (!$view->data) {
                 $view->data = new \stdClass;
             }
-
-            $view->data->banner = getNextEvent(true);
-            if ($view->data->banner) {
-                $view->data->banner->_title = strlen($view->data->banner->title) > 40 ? \Str::substr($view->data->banner->title, 0, 40).'...' : $view->data->banner->title;
+            if (!\Str::contains($view->name(), 'addons.banner')) {
+                $view->data->banner = getNextEvent(true);
+                if ($view->data->banner) {
+                    $view->data->banner->_title = strlen($view->data->banner->title) > 40 ? \Str::substr($view->data->banner->title, 0, 40).'...' : $view->data->banner->title;
+                }
             }
-
             $view->data->socialLinks = getSocialLinks(true);
             $view->data->footerMenu = getFooterMenu(true);
             $view->with(['mode' => $mode]);
         });
-
-        Paginator::useBootstrap();
     }
 }
